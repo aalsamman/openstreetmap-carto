@@ -145,15 +145,18 @@
   }
 
   [feature = 'highway_bus_stop'] {
-    [zoom >= 16] {
-      marker-file: url('symbols/square.svg');
-      marker-fill: @transportation-icon;
-      marker-width: 6;
-      marker-clip: false;
-    }
-    [zoom >= 17] {
+    [zoom >= 13] {
       marker-file: url('symbols/highway/bus_stop.12.svg');
-      marker-width: 12;
+      marker-fill: @transportation-icon;
+      marker-width: 13;
+      marker-clip: true;
+      marker-placement: interior;
+    }
+    [zoom >= 15] {
+      marker-file: url('symbols/highway/bus_stop.12.svg');
+      marker-width: 17;
+      marker-clip: true;
+      marker-placement: interior;
     }
   }
 
@@ -1451,8 +1454,8 @@
     [zoom >= 18] {
       [feature = 'amenity_parking'] { marker-file: url('symbols/amenity/parking.svg'); }
       [feature = 'amenity_parking']["parking" = 'street_side'],
-      [feature = 'amenity_parking']["parking" = 'lane'] { 
-        marker-file: url('symbols/amenity/parking_subtle.svg'); 
+      [feature = 'amenity_parking']["parking" = 'lane'] {
+        marker-file: url('symbols/amenity/parking_subtle.svg');
       }
       [feature = 'amenity_bicycle_parking'] { marker-file: url('symbols/amenity/bicycle_parking.svg'); }
       [feature = 'amenity_motorcycle_parking'] { marker-file: url('symbols/amenity/motorcycle_parking.svg'); }
@@ -2420,25 +2423,23 @@
   }
 
   [feature = 'highway_bus_stop'],
-  [feature = 'amenity_charging_station'],
-  [feature = 'amenity_fuel'],
   [feature = 'amenity_bus_station'] {
-    [zoom >= 17] {
+    [zoom >= 16] {
       text-name: "[name]";
       text-size: @standard-font-size;
       text-wrap-width: @standard-wrap-width;
       text-line-spacing: @standard-line-spacing-size;
       text-fill: @transportation-text;
-      text-dy: 11;
+      text-dy: 15;
       text-face-name: @standard-font;
-      text-halo-radius: @standard-halo-radius;
+      text-halo-radius: 2;
       text-halo-fill: @standard-halo-fill;
       [feature = 'highway_bus_stop'] {
-        text-dy: 9;
+        text-dy: 12;
       }
       [access != ''][access != 'permissive'][access != 'yes'] {
         text-opacity: 0.33;
-        text-halo-radius: 0;
+        text-halo-radius: 1;
       }
     }
   }

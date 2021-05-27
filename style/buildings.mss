@@ -43,7 +43,7 @@
   }
 }
 
-#entrances {
+/* #entrances {
   [zoom >= 18]["entrance" != null]  {
     marker-fill: @entrance-normal;
     marker-allow-overlap: true;
@@ -83,4 +83,4 @@
     marker-width: 8.0;
     marker-height: 8.0;
   }
-}
+} */
