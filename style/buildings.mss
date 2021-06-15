@@ -40,6 +40,7 @@
 #bridge {
   [zoom >= 12] {
     polygon-fill: #B8B8B8;
+    polygon-opacity: 0.2;
   }
 }
 
