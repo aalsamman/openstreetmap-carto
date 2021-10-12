@@ -324,7 +324,7 @@
 
 @railway-text-repeat-distance: 200;
 
-#roads-casing, #bridges, #tunnels {
+#bridges, #tunnels {
   ::casing {
     [zoom >= 12] {
       [feature = 'highway_motorway'] {
