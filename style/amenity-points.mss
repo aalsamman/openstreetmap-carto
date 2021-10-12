@@ -35,7 +35,7 @@
 @landcover-line-spacing-size-bigger: -2.25; // -0.15 em
 @landcover-face-name: @oblique-fonts;
 
-@standard-font-size: 10;
+@standard-font-size: 11;
 @standard-wrap-width: 30; // 3 em
 @standard-line-spacing-size: -1.5; // -0.15 em
 @standard-font: @book-fonts;
@@ -1451,8 +1451,8 @@
     [zoom >= 18] {
       [feature = 'amenity_parking'] { marker-file: url('symbols/amenity/parking.svg'); }
       [feature = 'amenity_parking']["parking" = 'street_side'],
-      [feature = 'amenity_parking']["parking" = 'lane'] { 
-        marker-file: url('symbols/amenity/parking_subtle.svg'); 
+      [feature = 'amenity_parking']["parking" = 'lane'] {
+        marker-file: url('symbols/amenity/parking_subtle.svg');
       }
       [feature = 'amenity_bicycle_parking'] { marker-file: url('symbols/amenity/bicycle_parking.svg'); }
       [feature = 'amenity_motorcycle_parking'] { marker-file: url('symbols/amenity/motorcycle_parking.svg'); }
@@ -1608,7 +1608,7 @@
 
   [feature = 'place_locality'][zoom >= 16] {
     text-name: "[name]";
-    text-size: 10;
+    text-size: 11;
     text-fill: @placenames;
     text-face-name: @book-fonts;
     text-halo-fill: @standard-halo-fill;
@@ -1617,7 +1617,7 @@
     text-line-spacing: -0.8; // -0.08 em
     text-margin: 7.0; // 0.7 em
     [zoom >= 17] {
-      text-size: 12;
+      text-size: 13;
       text-wrap-width: 60; // 5.0 em
       text-line-spacing: -0.60; // -0.05 em
       text-margin: 8.4; // 0.7 em
