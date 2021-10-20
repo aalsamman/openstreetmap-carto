@@ -5,9 +5,9 @@
   [zoom >= 13] {
     background/line-color: #ff5a75;
     /* Needs to be a bit wider than the route itself because of antialiasing */
-    background/line-width: 2;
+    background/line-width: 3;
     line-color: @bus-route;
-    line-width: 2;
+    line-width: 3;
     line-join: round;
     line-cap: butt;
     marker-placement: line;
@@ -16,7 +16,7 @@
     marker-file: url('symbols/oneway.svg');
     [zoom >= 15] {
       /* background/line-width: 5; */
-      line-width: 2;
+      line-width: 3;
       line-join: round;
       line-cap: butt;
       /* line-offset: -10; */

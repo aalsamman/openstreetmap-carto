@@ -14,7 +14,7 @@
   [zoom >= 17] {
     text-name: "[addr_housename]";
     ["addr_housenumber" != null] {
-      text-name: [addr_housenumber];
+      /* text-name: [addr_housenumber]; */
       ["addr_housename" != null] {
         text-name: [addr_housenumber] + "\n" + [addr_housename];
       }
@@ -37,15 +37,15 @@
         text-name: [addr_flats];
       }
       ["addr_unit" != null] {
-        text-name: [addr_housenumber] + " " + [addr_unit];
+        /* text-name: [addr_housenumber] + " " + [addr_unit]; */
         ["addr_housename" != null] {
-          text-name: [addr_housenumber] + " " + [addr_unit] + "\n" + [addr_housename];
+          /* text-name: [addr_housenumber] + " " + [addr_unit] + "\n" + [addr_housename]; */
         }
       }
       ["addr_flats" != null] {
-        text-name: [addr_housenumber] + " " + [addr_flats];
+        /* text-name: [addr_housenumber] + " " + [addr_flats]; */
         ["addr_housename" != null] {
-          text-name: [addr_housenumber] + " " + [addr_flats] + "\n" + [addr_housename];
+          /* text-name: [addr_housenumber] + " " + [addr_flats] + "\n" + [addr_housename]; */
         }
       }
     }

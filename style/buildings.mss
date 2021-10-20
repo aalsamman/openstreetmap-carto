@@ -11,10 +11,10 @@
 @entrance-normal: @building-line;
 
 #buildings {
-  [zoom >= 14] {
+  [zoom >= 17] {
     polygon-fill: @building-low-zoom;
     polygon-clip: false;
-    [zoom >= 15] {
+    [zoom >= 18] {
       polygon-fill: @building-fill;
       line-color: @building-line;
       line-width: .75;
@@ -26,7 +26,7 @@
     [building = 'train_station'],
     [public_transport = 'station'] {
       polygon-fill: @building-major-z14;
-      [zoom >= 15] {
+      [zoom >= 17] {
         polygon-fill: @building-major-z15;
         line-color: @building-major-line;
         [zoom >= 16] {
@@ -43,7 +43,7 @@
   }
 }
 
-/* #entrances {
+#entrances {
   [zoom >= 18]["entrance" != null]  {
     marker-fill: @entrance-normal;
     marker-allow-overlap: true;
@@ -83,4 +83,4 @@
     marker-width: 8.0;
     marker-height: 8.0;
   }
-} */
+}
